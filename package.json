@@ -32,7 +32,10 @@
     "nodejs",
     "expressjs",
     "express-validator",
-    "cors"
+    "cors",
+    "mocha",
+    "chai",
+    "chai-http"
   ],
   "author": "Arvindran Kalidas <arvindrankalidas@gmail.com>",
   "license": "MIT",
