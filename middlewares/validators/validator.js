@@ -12,7 +12,7 @@ export const validate = (validationRules) => {
 
 			logger.error(
 				`${statusCode} ${req.method} ${req.path}${' ' + JSON.stringify(req.body) || ''} - ${
-					result.array()[0]['error']
+					result.array()[0].msg
 				}`,
 			);
 
