@@ -1,0 +1,58 @@
+{
+  "name": "fcc-sudoku-solver",
+  "version": "1.0.0",
+  "description": "A full-stack web app for checking, validating and solving a Sudoku puzzle. This application validates the input puzzle string but also assesses the correctness of number placements. In addition, it also provides solutions to valid puzzles.",
+  "type": "module",
+  "main": "server.js",
+  "imports": {
+    "#config/*": "./config/*",
+    "#controllers/*": "./controllers/*",
+    "#handlers/*": "./middlewares/handlers/*",
+    "#validators/*": "./middlewares/validators/*",
+    "#tests/*": "./tests/*"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node -r dotenv/config --watch server.js dotenv_config_path=.env.dev",
+    "lint": "eslint src --ext .js,.jsx",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "prettier . --check",
+    "prettier:fix": "prettier . --write --config .prettierrc.json",
+    "test": "mocha ./tests/ --ui tdd --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mrarvind90/fcc-sudoku-solver.git"
+  },
+  "keywords": [
+    "freeCodeCamp",
+    "html5",
+    "css3",
+    "javascript",
+    "nodejs",
+    "expressjs",
+    "express-validator",
+    "cors"
+  ],
+  "author": "Arvindran Kalidas <arvindrankalidas@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrarvind90/fcc-sudoku-solver/issues"
+  },
+  "homepage": "https://github.com/mrarvind90/fcc-sudoku-solver#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.9",
+    "chai-http": "^4.4.0",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "mocha": "^10.2.0",
+    "prettier": "^3.0.3"
+  }
+}
