@@ -19,7 +19,7 @@ A full-stack web app for checking, validating and solving a Sudoku puzzle. This 
 ## Technologies Used
 - **Client Side:**
     - HTML: Provides the structure of the web pages.
-    - CSS with Bootstrap: Adds styling and responsive design to the user interface.
+    - CSS: Adds styling and responsive design to the user interface.
     - Vanilla JavaScript: Implements the client-side functionality for unit conversion.
 
 - **Server Side:**
