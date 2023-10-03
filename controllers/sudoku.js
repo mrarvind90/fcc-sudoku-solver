@@ -78,7 +78,7 @@ export const check = (req, res) => {
 
 	const conflict = getPlacementConflicts(grid, row, column, value);
 
-	return conflict.length > 0
+	return conflict.length > 0 && grid[row][column] !== value
 		? res.status(422).json({ valid: false, conflict })
 		: res.status(200).json({ valid: true });
 };
